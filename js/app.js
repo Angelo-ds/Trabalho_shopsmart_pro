@@ -10,7 +10,11 @@ function calcularTotal(){
 
 
     if (isNaN(v1) || isNaN(v2)){
-        alert("Valor 01 ou Valor 02 inválido. Digite um número.");
+        resultado.innerHTML=
+        `
+        <h2>Erro<h2>
+        <p>insira um valor válido para os dois campos.<p>
+        `
             verificaV1.focus();
         return;
     }
@@ -20,7 +24,8 @@ function calcularTotal(){
     resultado.innerHTML = `
         <ul>
             <h2>Total da compra<h2>
-            <p>Seu total esperado é: ${v1} * ${v2} = <span>${v1 * v2}</span></p>
+            <p>Houve uma compra de ${v2} unidades com o preço unitário de R$${v1}
+            <p>Seu total esperado é: R$${v1 * v2}</p>
         </ul>
     `;
 }
@@ -45,7 +50,8 @@ function desconto(){
     resultado.innerHTML = `
         <ul>
             <h2>Desconto esperado<h2>
-            <p>Seu desconto esperado é: ${v1} - ${v3} = <span>${v1 - v3}</span><p>
+            <p>foi aplicado um desconto de R$${v2} sobre o valor de R$${v1}
+            <p>Seu desconto esperado é: R$${v1 - v3}<p>
         </ul>
     `;
 }
@@ -69,7 +75,8 @@ function juros(){
     resultado.innerHTML = `
         <ul>
             <h2>Juros da compra<h2>
-            <p>Seu Juros esperado é: ${v1} + ${v3} = <span>${v1 + v3}</span><p>
+            <p>foi aplicado um acréscimo de R$${v2} sobre o valor de R$${v1}
+            <p>Seu Juros esperado é: R$${v1 + v3}<p>
         </ul>
     `;
 }
@@ -93,7 +100,7 @@ function comissao(){
         <ul>
             <h2>Comissão da compra<h2>
             <p>Foi aplicado uma porcentagem de ${v2}% sobre o valor de R$${v1}
-            <p>Sua comissão esperada é: <span>${v1 * v3}</span></p>
+            <p>Sua comissão esperada é: R$${v1 * v3}</p>
         </ul>
     `;
 }
@@ -116,7 +123,7 @@ function lucro(){
         <ul>
             <h2>Lucro da compra<h2>
             <p>Teve um gasto de R$${v2} sobre o valor de R$${v1}
-            <p>Seu lucro esperado é:<span> R$${v1 - v2}</span><p>
+            <p>Seu lucro esperado é: R$${v1 - v2}<p>
         </ul>
     `;
 }
