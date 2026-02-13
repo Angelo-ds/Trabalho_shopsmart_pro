@@ -5,25 +5,31 @@
 }
 
 .header{
-    color: white;
-    font-size: 30px;
-    height: 20vh;
-    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
 }
 
 /* esse é o main*/
 .container{
-    display: flex;
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
-    justify-content: flex-start;
-    flex-direction: column;
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+}
+
+.header h1{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header h1 span{
+    color: lightblue;
 }
 
 
-
-/**/
 /*ícones dos botões*/
 .material-symbols-outlined{
 
@@ -31,8 +37,8 @@
 
 /* divs que contem os inputs */
 .input-group{
-    color: white;
-
+    display: flex;
+    flex-direction: column;
 }
 
 /* section que segura os botões(incluindo o limpar) e os inputs*/
@@ -46,7 +52,9 @@
 
 /* div que contem as divs de input*/
 .inputs{
-
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
 
@@ -66,9 +74,22 @@
 
 /*div que aparece os resultados no final*/
 .resultado{
-    color: white;
-    width: 20vw;
-    height: 10vh;
-    font-size: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    min-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
 
+body{
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color:white
 }
