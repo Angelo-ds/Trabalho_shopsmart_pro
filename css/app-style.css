@@ -12,6 +12,14 @@
     margin-bottom: 25px;
 }
 
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color:white
+}
 /* esse é o main*/
 .container{
     width: 100%;
@@ -26,13 +34,18 @@
 }
 
 .header h1 span{
-    color: lightblue;
+    color: blue;
 }
 
 
 /*ícones dos botões*/
 .material-symbols-outlined{
 
+}
+
+.logo-icon{
+    font-size: 35px;
+    color: aqua;
 }
 
 /* divs que contem os inputs */
@@ -43,10 +56,11 @@
 
 /* section que segura os botões(incluindo o limpar) e os inputs*/
 .card{
-    height: 10vh;
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
+    background: navy;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 35px black;
+    margin-bottom: 20px;
 }
 
 
@@ -83,13 +97,4 @@
     font-weight: 600;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
     transition: 0.3s ease;
-}
-
-body{
-    background: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color:white
 }
