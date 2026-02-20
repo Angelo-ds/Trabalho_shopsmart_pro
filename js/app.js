@@ -3,6 +3,11 @@ const verificaV1 = document.getElementById('valor01');
 const verificaV2 = document.getElementById('valor02'); 
 const resultado = document.getElementById('resultado');
 
+function bloco_de_resultado(){
+    resultado.style.display = 'flex';
+    resultado.style.background = 'lightblue';
+
+}
 function mostrarErro() {
     resultado.style.display = 'flex';
     resultado.style.background = 'red';
@@ -27,8 +32,7 @@ function calcularTotal(){
         return;
     }
 
-    resultado.style.display = 'flex';
-    resultado.style.background = 'lightblue';
+    bloco_de_resultado();
 
     resultado.innerHTML = `
 
@@ -54,9 +58,7 @@ function desconto(){
         return;
     }
 
-
-    resultado.style.display = 'flex';
-    resultado.style.background = 'lightblue';
+    bloco_de_resultado();
 
     resultado.innerHTML = `
 
@@ -80,9 +82,8 @@ function juros(){
         return;
     }
  
+    bloco_de_resultado();
 
-    resultado.style.display = 'flex';
-    resultado.style.background = 'lightblue';
     resultado.innerHTML = `
 
             <h2>Juros da compra</h2>
@@ -104,9 +105,7 @@ function comissao(){
         return;
     }
 
-
-    resultado.style.display = 'flex';
-    resultado.style.background = 'lightblue';
+    bloco_de_resultado();
 
     resultado.innerHTML = `
 
@@ -129,8 +128,7 @@ function lucro(){
     }
 
 
-    resultado.style.display = 'flex';
-    resultado.style.background = 'lightblue';
+    bloco_de_resultado();
 
     resultado.innerHTML = `
 
